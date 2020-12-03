@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Brandon Light";
+	src: url("../fonts/brandon_light.woff2");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	user-select: none;
+	-moz-user-select: none;
+	color: #000;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	transition: background 0.4s ease-in-out, filter 0.4s ease-in-out;
+	cursor: pointer;
+	font-family: "Brandon Light";
+}
+
+body.night {
+	background: #000;
+	filter: invert(1);
+}
+
+a {
+	text-decoration: none;
+}
+
+.content {
+	width: 65vw;
+	padding-top: 0vw;
+}
+
+.content img, .content canvas {
+	width: 65vw;
+	height: calc(65vw / 7);
+}
+
+.social {
+	height: calc(65vw / 7);
+	height: 5vw;
+	font-size: 1.75vw;
+	letter-spacing: 0.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
