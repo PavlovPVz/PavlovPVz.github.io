@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>OnionTeam</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href="css/highstl.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/Shacke.css" rel="stylesheet">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="font-awesome-5.15/css/all.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="css2.css?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+<script src="js/jquery.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/title.js"></script>
+<style>
+.g2 {
+    color: #8A2BE2;
+}
+    
+.g3 {
+  color: #9400D3;
+}   
+    
+.g4 {
+  color: #9932CC;
+}
+</style>
+<style>
+
+
+
+@font-face{font-family:Pompadur;src:url(fonts/font.eot);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}
+@font-face{font-family:Bazy;src:url(fonts/bazy.eot);src:local(bazy),url(fonts/bazy.ttf);}
+body, a, a:link{cursor:url(images/cursor/cursor.cur.txt), default;} a:hover {cursor:url(images/cursor/cursor2.cur.txt),pointer;}
+</style>
+</head>
+<div class="p-overlay">
+  <div class="preloader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="love">
+      <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="love"></fecolormatrix>
+      <feblend in="P" in2="love"></feblend>
+    </filter>
+  </defs>
+  </svg>
+</div>
+<body onmousedown="return false" onselectstart="return false">
+<style>body{overflow:hidden}</style>
+<script>disableWheelScroll();</script>
+<div id="star" class="video mask overlay">
+<i class="volume-button fa fa-volume-up" style="font-size:20px;color:DarkOrchid"></i>
+<i class="stop-button fa fa-play" style="font-size:20px;color:DarkOrchid"></i>
+<div class="video-fallback"></div>
+<video id="video" loop="">
+<source src="video/video.mp4" type="video/mp4">
+</video>
+<script>setTimeout(function(){document.getElementById("video").play();}, 3000);</script>
+<canvas class="cover"></canvas>
+</div>
+<script>document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+}, false);
+</script>
+<script>
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)){
+return false;
+}
+
+}
+</script>
+<script>
+document.onkeydown = function(e) {
+if(event.keyCode == "S") {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+
+<script>
+document.onkeydown = function(e) {
+if(event.keyCode == "P") {
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'P'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<a class="heart-wrap" href="https://onionteam.tk/">
+  <div class="hearta"></div>
+</a>
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="awrapper">
+<div class="titles rubberBand" style="animation-delay: 6s;">
+<div class="zoomIn" style="animation-delay: 4s;">
+<div>
+<h1 style="margin-bottom: 20px;"><font color="#9370DB">O<span class="g2">n</span><span class="g3">i</span><span class="g4">o</span><span class="g5">n</span><span class="g1">T</span><span class="g2">e</span><span class="g3">a</span><span class="g4">m</span></font>
+</h1></div>
+
+
+
+
+</div></div>
+<div class="media fadeInUpBig" style="animation-delay: 6.5s;">
+<a href="https://vk.com/maxronroot" id="vk" title="VKontakte" target="_blank">
+<i class="fab fa-vk hvr-grow" title="VKontakte"></i>
+</a>
+<a href="https://t.me/MaxronCod" title="Telegram" target="_blank">
+<i class="fab fa-telegram hvr-grow" title="Telegram"></i>
+</a>
+<a href="https://steamcommunity.com/id/MaxronRoot/" title="Steam" target="_blank">
+<i class="fab fa-steam hvr-grow" title="Steam"></i>
+</a>
+</div>
+</div>
+<script>$(document).ready(function() {setTimeout(function(){$('body').addClass('loaded');$('h1').css('color','#222222');}, 2500);});</script>
+<div>
+</div>
+</div></div></body>
+</html>
